@@ -385,270 +385,295 @@ function problem30(a) {
   } else {
     console.log("no");
   }
-  return a 
+  return a;
 }
 
 // Problem 31
-function problem31(numb1,numb2,numb3){
+function problem31(numb1, numb2, numb3) {
   // let numb1 = 3;
   // let numb2 = 4;
   // let numb3 = 5;
-  
-  if(numb1%2==0){
-      console.log('YES')
-  }else{
-      console.log('NO')
-  }
-  if(numb2%2==0){
-      console.log('YES')
-  }else{
-      console.log('NO')
-  }
-  if(numb3%2==0){
-      console.log('YES')
-  }else{                
-      console.log('NO')       
-  } 
-}
 
+  if (numb1 % 2 == 0) {
+    console.log("YES");
+  } else {
+    console.log("NO");
+  }
+  if (numb2 % 2 == 0) {
+    console.log("YES");
+  } else {
+    console.log("NO");
+  }
+  if (numb3 % 2 == 0) {
+    console.log("YES");
+  } else {
+    console.log("NO");
+  }
+}
 
 // Problem 32
-
-
-for(i=0; i<1; i++){
-    console.log("IOI")
-}
+// for(i=0; i<1; i++){
+//     console.log("IOI")
+// }
 
 // Problem 33
 
 // for (i=0; i<3; i++){
 //     console.log("IOI")
-// }      
+// }
 
 // Problem 34
-
-// let a = 4
-
-// for ( i=0; i<a; i++){
-//     console.log("IOI")
-// }
+function problem34(a) {
+  // let a = 4
+  for (i = 0; i < a; i++) {
+    console.log("IOI");
+  }
+}
 
 // Problem 35
+function problem35(a) {
+  // let a = 5;
+  let s = 0;
 
-// let a = 5;
-// let s = 0;
-
-// for (i = 1; i <= a; i++) {
-//   s = s + i;
-// }
-// console.log(s);
+  for (i = 1; i <= a; i++) {
+    s = s + i;
+  }
+  return s;
+}
 
 // Problem 36
-// let a = 5;
-// let s = 1;
+function problem36(a) {
+  // let a = 5;
+  let s = 1;
 
-// for (i = 1; i <= a; i++) {
-//   s = s * i;
-// }
-// console.log(s);
+  for (i = 1; i <= a; i++) {
+    s = s * i;
+  }
+  return s;
+}
 
 // Problem 37
-// let a = 6;
-// let s = 0;
+function problem37(a) {
+  // let a = 6;
+  let s = 0;
 
-// for (i = 1; i <= a; i++) {
-//   s = 100 * i;
-// }console.log(s)
+  for (i = 1; i <= a; i++) {
+    s = 100 * i;
+  }
+  return s;
+}
 
 // Problem 38
-// let a = 50;
-// let b = 6;
+function problem38(a, b) {
+  // let a = 50;
+  // let b = 6;
 
-// let s = 0;
+  let s = 0;
 
-// for (let i = 1; i <= b; i++) {
-//   s = s + a;
-// }
-// console.log(s);
+  for (let i = 1; i <= b; i++) {
+    s = s + a;
+  }
+  return s;
+}
 
 // Problem 39
-// let a = 5;
+function problem39(a) {
+  // let a = 5;
 
-// let s = 1;
-// for (let i = 1; i <= a; i++) {
-//   s = s*2;
-// }
-// console.log(s);
+  let s = 1;
+  for (let i = 1; i <= a; i++) {
+    s = s * 2;
+  }
+  return s;
+}
 
 // Problem 40
-// let a = 3;
-// let b = 4;
+function problem40(a, b) {
+  // let a = 3;
+  // let b = 4;
 
-// let s = 1;
+  let s = 1;
 
-// for(let i=1; i<=b; i++){
-//     s = s*a
-// } console.log(s)
+  for (let i = 1; i <= b; i++) {
+    s = s * a;
+  }
+  return s;
+}
 
 // Problem 41
-// let a = 4;
-// if (a > 5 || a < 2) {
-//   console.log("buruu dun");
-// } else if (a <= 3) {
-//   console.log("Unasan");
-// } else console.log("Tentsesen");
+function problem41(a) {
+  // let a = 4;
+  if (a > 5 || a < 2) {
+    console.log("buruu dun");
+  } else if (a <= 3) {
+    console.log("Unasan");
+  } else console.log("Tentsesen");
+}
 
 // Problem 42
-// let a = 5;
-// let Dun;
+function problem42(a) {
+  // let a = 5;
+  let Dun;
 
-// if (a == 2) {
-//   Dun = "Muu";
-// } else if (a == 3) {
-//   Dun = "Dund";
-// } else if (a == 4) {
-//   Dun = "Sain";
-// } else if (a == 5) {
-//   Dun = "Onts";
-// } else {
-//   Dun = "wrong number";
-// }
-// console.log(Dun);
+  if (a == 2) {
+    Dun = "Muu";
+  } else if (a == 3) {
+    Dun = "Dund";
+  } else if (a == 4) {
+    Dun = "Sain";
+  } else if (a == 5) {
+    Dun = "Onts";
+  } else {
+    Dun = "wrong number";
+  }
+  return Dun;
+}
 
 // Problem 43
-// let a = 0;
-// let Dun;
+function problem43(a) {
+  // let a = 0;
+  let Dun;
 
-// if (a > 100 || a < 0) {
-//   Dun = "Wrong number";
-// } else if (a > 89) {
-//   Dun = "A";
-// } else if (a > 79) {
-//   Dun = "B";
-// } else if (a > 69) {
-//   Dun = "c";
-// } else if (a > 59) {
-//   Dun = "D";
-// } else if (a >= 0) {
-//   Dun = "F";
-// }
-// console.log(Dun);
+  if (a > 100 || a < 0) {
+    Dun = "Wrong number";
+  } else if (a > 89) {
+    Dun = "A";
+  } else if (a > 79) {
+    Dun = "B";
+  } else if (a > 69) {
+    Dun = "c";
+  } else if (a > 59) {
+    Dun = "D";
+  } else if (a >= 0) {
+    Dun = "F";
+  }
+  return Dun;
+}
 
 // Problem 44
+function problem44(a) {
+  // let a = 8;
+  let weekdays;
 
-// let a = 8;
-// let weekdays;
-
-// if (a > 7 || a < 1) {
-//   weekdays = "Wrong";
-// } else if (a == 1) {
-//   weekdays = "Monday";
-// } else if (a == 2) {
-//   weekdays = "Tuesday";
-// } else if (a == 3) {
-//   weekdays = "Wednesday";
-// } else if (a == 4) {
-//   weekdays = "Thursday";
-// } else if (a == 5) {
-//   weekdays = "Friday";
-// } else if (a == 6) {
-//   weekdays = "Saturday";
-// } else if (a == 7) {
-//   weekdays = "Sunday";
-// }
-// console.log(weekdays);
+  if (a > 7 || a < 1) {
+    weekdays = "Wrong";
+  } else if (a == 1) {
+    weekdays = "Monday";
+  } else if (a == 2) {
+    weekdays = "Tuesday";
+  } else if (a == 3) {
+    weekdays = "Wednesday";
+  } else if (a == 4) {
+    weekdays = "Thursday";
+  } else if (a == 5) {
+    weekdays = "Friday";
+  } else if (a == 6) {
+    weekdays = "Saturday";
+  } else if (a == 7) {
+    weekdays = "Sunday";
+  }
+  return weekdays;
+}
 
 // Problem 45
-
-// let a = 1;
-// let season;
-// if (a <= 0 || a >= 13) {
-//   season = "Wrong";
-// } else if (a >= 3 && a <= 5) {
-//   season = "Spring";
-// } else if (a >= 6 && a <= 8) {
-//   season = "Summer";
-// } else if (a >= 9 && a <= 11) {
-//   season = "Autumn";
-// } else if ((a <= 2 && a <= 1) || a <= 12) {
-//   season = "Winter";
-// }
-// console.log(season);
+function problem45(a) {
+  // let a = 1;
+  let season;
+  if (a <= 0 || a >= 13) {
+    season = "Wrong";
+  } else if (a >= 3 && a <= 5) {
+    season = "Spring";
+  } else if (a >= 6 && a <= 8) {
+    season = "Summer";
+  } else if (a >= 9 && a <= 11) {
+    season = "Autumn";
+  } else if ((a <= 2 && a <= 1) || a <= 12) {
+    season = "Winter";
+  }
+  return season;
+}
 
 // Problem 46
+function problem46(a, b, c) {
+  // let a = 1;
+  // let b = 2;
+  // let c = 3;
 
-// let a = 1;
-// let b = 2;
-// let c = 3;
-
-// if (a + b >= c || b + c >= a || c + a >= b) {
-//   console.log("yes");
-// } else {
-//   console.log("no");
-// }
+  if (a + b >= c || b + c >= a || c + a >= b) {
+    console.log("yes");
+  } else {
+    console.log("no");
+  }
+}
 
 // Problem 47
+function problem47(a) {
+  // let a = 5;
 
-// let a = 5;
+  let s = 0;
 
-// let s = 0;
-
-// for (let i = 1; i <= 10; i++) {
-//   s = s + a;
-//   console.log(a + "*" + i + "=" + s);
-// }
+  for (let i = 1; i <= 10; i++) {
+    s = s + a;
+    console.log(a + "*" + i + "=" + s);
+  }
+  return s;
+}
 
 // Problem 48
+function problem48(a, b) {
+  // let a = 3;
+  // let b = 5;
 
-// let a = 3;
-// let b = 5;
+  let s = 1;
 
-// let s = 1;
-
-// for (let i = 1; i <= b; i++) {
-//   s = a * s;
-//   console.log(a + "^" + i + "=" + s);
-// }
+  for (let i = 1; i <= b; i++) {
+    s = a * s;
+    console.log(a + "^" + i + "=" + s);
+  }
+  return s;
+}
 
 // Problem 49
+function problem49(b, c, d) {
+  // let b = 2;
+  // let c = 5;
+  // let d = 4;
 
-// let b = 2;
-// let c = 5;
-// let d = 4;
+  let a = 0;
 
-// let a = 0;
-
-// if ((a = b * c - d)) {
-//   console.log(a);
-// }
+  if ((a = b * c - d)) {
+    return a;
+  }
+}
 
 // //////////////////////////////////
 // Additional Problem
 // Problem 1
-// let a = 3;
-// let b=[2, 3, 4, 5, 3,]
+let b=[2, 3, 4, 5, 3,]
+function guravtaitentsuu(a){
+  let count=0;
 
-// let count=0;
+  for(let i=0; i<b.length; i++){
+    if(b[i]==a){
+      count+=1
+    }
+  }
+  return count
+}
 
-// for(let i=0; i<b.length; i++){
-//   if(b[i]==a){
-//     count+=1
-//   }
-// }console.log(count)
+
+
+
 
 // Problem 2
-// function gcd(a, b) {
-//   while (b !== 0) {
-//       let temp = b;
-//       b = a % b;
-//       a = temp;
-//   }
-//   return a;
-// }
-// let num1 = 15;
-// let num2 = 9;
-
-// console.log(gcd(num1, num2));
+function gcd(a, b) {
+  while (b !== 0) {
+      let temp = b;
+      b = a % b;
+      a = temp;
+  }
+  return a;
+}
 
 // let a = Number(prompt("ehnii toog oruul"));
 // let b = Number(prompt("daraagiin toog oruul"));
@@ -693,3 +718,11 @@ for(i=0; i<1; i++){
 //     parseInt(a/10);
 // }
 // console.log(count1);
+
+let arr = [1,2,3,4]
+function getEven(array){
+  let even= array.map(n=>n%2==0)
+  return even
+}
+
+
