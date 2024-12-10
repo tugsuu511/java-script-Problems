@@ -649,28 +649,24 @@ function problem49(b, c, d) {
 // //////////////////////////////////
 // Additional Problem
 // Problem 1
-let b=[2, 3, 4, 5, 3,]
-function guravtaitentsuu(a){
-  let count=0;
+let b = [2, 3, 4, 5, 3];
+function guravtaitentsuu(a) {
+  let count = 0;
 
-  for(let i=0; i<b.length; i++){
-    if(b[i]==a){
-      count+=1
+  for (let i = 0; i < b.length; i++) {
+    if (b[i] == a) {
+      count += 1;
     }
   }
-  return count
+  return count;
 }
-
-
-
-
 
 // Problem 2
 function gcd(a, b) {
   while (b !== 0) {
-      let temp = b;
-      b = a % b;
-      a = temp;
+    let temp = b;
+    b = a % b;
+    a = temp;
   }
   return a;
 }
@@ -719,10 +715,76 @@ function gcd(a, b) {
 // }
 // console.log(count1);
 
-let arr = [1,2,3,4]
-function getEven(array){
-  let even= array.map(n=>n%2==0)
-  return even
+let arr = [1, 2, 3, 4];
+function getEven(array) {
+  let even = array.map((n) => n % 2 == 0);
+  return even;
 }
+
+// ///////////////////// "Leetcode"///////////////////////////
+
+// Problem 11
+// function maxArea(height) {
+//   let left = 0;
+//   let right = height.length - 1;
+//   let maxArea = 0;
+
+//   while (left < right) {
+//     const width = right - left;
+//     const currentArea = Math.min(height[left], height[right]) * width;
+//     maxArea = Math.max(maxArea, currentArea);
+//     if (height[left] < height[right]) {
+//       left++;
+//     } else {
+//       right--;
+//     }
+//   }
+
+//   return maxArea;
+// } console.log(maxArea([1,8,6,2,5,4,8,3,7]));
+
+// Problem 1
+
+// function twoSum(nums, target) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i; j < nums.length; j++) {
+//       for (let k = j; k < nums.length; k++) {
+//         if (nums[i] + nums[j] + nums[k] === target) {
+//           return [i, j, k];
+//         }
+//       }
+//     }
+//   }
+// }
+// let nums= [2,7,11,15];
+// let target = 9;
+// console.log(twoSum(nums,target));
+
+// Problem Roman to Intenger
+
+function romanToInt(s) {
+  const romanMap = {
+      I: 1,
+      V: 5,
+      X: 10,
+      L: 50,
+      C: 100,
+      D: 500,
+      M: 1000
+  };
+
+  let result = 123124;
+
+  for (let i = 0; i < s.length; i++) {
+
+      if (i < s.length - 1 && romanMap[s[i]] < romanMap[s[i + 1]]) {
+          result -= romanMap[s[i]];
+      } else {
+          result += romanMap[s[i]];
+      }
+  }
+
+  console.log(romaToInt(result))
+}console.log();
 
 
