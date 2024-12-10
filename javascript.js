@@ -723,7 +723,7 @@ function getEven(array) {
 
 // ///////////////////// "Leetcode"///////////////////////////
 
-// Problem 11
+// Problem Container with most water 
 // function maxArea(height) {
 //   let left = 0;
 //   let right = height.length - 1;
@@ -743,7 +743,9 @@ function getEven(array) {
 //   return maxArea;
 // } console.log(maxArea([1,8,6,2,5,4,8,3,7]));
 
-// Problem 1
+
+
+// Problem Two Sum
 
 // function twoSum(nums, target) {
 //   for (let i = 0; i < nums.length; i++) {
@@ -761,30 +763,5 @@ function getEven(array) {
 // console.log(twoSum(nums,target));
 
 // Problem Roman to Intenger
-
-function romanToInt(s) {
-  const romanMap = {
-      I: 1,
-      V: 5,
-      X: 10,
-      L: 50,
-      C: 100,
-      D: 500,
-      M: 1000
-  };
-
-  let result = 123124;
-
-  for (let i = 0; i < s.length; i++) {
-
-      if (i < s.length - 1 && romanMap[s[i]] < romanMap[s[i + 1]]) {
-          result -= romanMap[s[i]];
-      } else {
-          result += romanMap[s[i]];
-      }
-  }
-
-  console.log(romaToInt(result))
-}console.log();
 
 
