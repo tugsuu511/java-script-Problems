@@ -723,7 +723,7 @@ function getEven(array) {
 
 // ///////////////////// "Leetcode"///////////////////////////
 
-// Problem Container with most water 
+// Problem Container with most water
 // function maxArea(height) {
 //   let left = 0;
 //   let right = height.length - 1;
@@ -743,8 +743,6 @@ function getEven(array) {
 //   return maxArea;
 // } console.log(maxArea([1,8,6,2,5,4,8,3,7]));
 
-
-
 // Problem Two Sum
 
 // function twoSum(nums, target) {
@@ -763,5 +761,45 @@ function getEven(array) {
 // console.log(twoSum(nums,target));
 
 // Problem Roman to Intenger
+// function romanToInt(s) {
+//   const romanMap = {
+//     I: 1,
+//     V: 5,
+//     X: 10,
+//     L: 50,
+//     C: 100,
+//     D: 500,
+//     M: 1000,
+//   };
+  
 
+//   let total = 0;
+//   for (let i = 0; i < s.length; i++) {
+//     if (i + 1 < s.length && romanMap[s[i]] < romanMap[s[i + 1]]) {
+//       total -= romanMap[s[i]];
+//     } else {
+//       total += romanMap[s[i]];
+//     }
+//   }
+
+//   return total;
+// }
+// const s = "MCMXCVIIII";
+// console.log(romanToInt(s));
+
+
+ let email = "tugs-erdene.damdin@gmail.com" ////A. Bat
+
+function formatName(a){
+  let name = a.split("@")[0]
+  let firstName = a.split(".")[0]
+  let lastName = name.split(".")[1]
+  let firstchar = lastName.charAt(0).toUpperCase() + lastName.slice(1);
+  let firstchar1 = firstName.charAt(0).toUpperCase() + firstName.slice(1)
+
+  return firstchar + ". " + firstchar1
+
+  
+}
+console.log(formatName(email));
 
